@@ -2,6 +2,11 @@ import React from "react";
 import { Stack, Button, Box } from "@mui/material";
 
 export const Buttons = () => {
+
+    const handleNextClick = () => {
+        window.location.reload();
+      };
+
   return (
     <Box
       position="sticky"
@@ -28,6 +33,7 @@ export const Buttons = () => {
            borderColor: 'white',
            backgroundColor: 'transparent',
          }}
+         onClick={handleNextClick} 
          >Next</Button>
       </Stack>
     </Box>
