@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import './NasaImage.css'
 
 // Define the NASA API key
 const API_KEY = 'bArs10qVPMxJk49pW1diSTQnXcKSvuhlLJTxO4b3';
@@ -54,8 +55,8 @@ const NasaImage: React.FC = () => {
 
   return (
 
-    <div>
-      {imageURL && <img src={imageURL}/>}
+    <div className="centered-container">
+      {imageURL && <img src={imageURL} className="centered-image"/>}
     </div>
   );
 };

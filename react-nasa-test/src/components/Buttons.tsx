@@ -1,18 +1,34 @@
-import React from 'react';
-import { Stack, Button, Box } from '@mui/material';
+import React from "react";
+import { Stack, Button, Box } from "@mui/material";
 
 export const Buttons = () => {
   return (
     <Box
+      position="sticky"
+      bottom="2rem"
       display="flex"
-      flexDirection="column"
       justifyContent="center"
       alignItems="center"
-      minHeight="100vh"
+      width="100%"
     >
-      <Stack spacing={2} direction='row'>
-        <Button variant='contained'>Save</Button>
-        <Button variant='outlined'>Next</Button>
+      <Stack spacing={2} direction="row">
+        <Button
+          variant="contained"
+          style={{
+            color: "white",
+            backgroundColor: "grey",
+          }}
+        >
+          Save
+        </Button>
+        <Button 
+         variant='outlined'
+         style={{
+           color: 'white',
+           borderColor: 'white',
+           backgroundColor: 'transparent',
+         }}
+         >Next</Button>
       </Stack>
     </Box>
   );
