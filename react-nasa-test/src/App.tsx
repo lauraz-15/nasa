@@ -1,9 +1,17 @@
 import React from 'react';
+import ResponsiveAppBar from './components/Nav';
+import { Routes, Route } from 'react-router';
+import Favorites from './components/Favorites';
+import Home from './components/Home';
 
 const App = () => {
   return (
     <div className="App">
-   <h1>app</h1>
+      <ResponsiveAppBar/>
+      <Routes>
+        <Route path="Home" element={<Home/>}/>
+        <Route path="Favorites" element={<Favorites/>}/>
+      </Routes>
     </div>
   );
 }
