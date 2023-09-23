@@ -1,10 +1,12 @@
 import React from 'react';
 import { Buttons } from './Buttons';
+import NasaImage from './NasaImage';
+
 
 const Home = () => {
   return (
     <div className="App">
-      <h1>Home</h1>
+      <NasaImage/>
       <Buttons />
     </div>
   );
